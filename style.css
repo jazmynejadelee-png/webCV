@@ -9,6 +9,7 @@
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* soft shadow effect */ 
 }
 
+
 /* -----------------------------------*/ 
 /* --- Global styles & background --- */ 
 body {
@@ -26,11 +27,26 @@ body {
     padding: 20px; 
 } 
 
+/* --- Profile picture container styling --- */ 
+.header-container { 
+    display: flex; 
+    align-items: center;  
+    gap: 20px; 
+} 
+
+.profile-pic { 
+    width: 120px; 
+    height: 120px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+}
+
+
 
 /* desktop paragraphs heading styles */ 
 p {
    font-family:'Times New Roman', Times, serif; 
-   font-size: large;
+   font-size: 1rem;
    color:#000000;  
    margin: 0 0 1rem 0;
 }  
@@ -58,9 +74,9 @@ h2 {
 /* List styles */ 
 ul {
     list-style-type: disc;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-    font-size: 0.9rem;
-}   
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: medium; 
+}  
 
 
 /* --- Contact Section Styling --- */ 
@@ -118,7 +134,7 @@ h3 {
 
 /* Paragraphs and list mobile responsive fixes */
 p, ul { 
-    font-size: 0.9rem; 
+    font-size: 1rem; 
 }
 
 }
