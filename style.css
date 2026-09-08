@@ -1,13 +1,138 @@
-/* Body and paragraphs */ 
+
+/* --- Page Boarder and layout Container --- */ 
+.cv-page { 
+    max-width: 850px;                                /* Limits the width of my desired page */
+    margin: 40px auto;                              /* Centers in onto the screen top/bottom */ 
+    background: rgba(255, 255, 255, 0.95);       /* semi-transparent background */ 
+    padding: 40px;                                
+    border-radius: 12px;                           /* Adds a outliner boarder line */ 
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* soft shadow effect */ 
+}
+
+/* -----------------------------------*/ 
+/* --- Global styles & background --- */ 
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: #000000;  
-    font-size: 1rem;
+    font-size: 1rem; 
 
+    /* Adding image as the background */ 
+    background-image: url('background.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed;  
+
+    margin: 100px;
+    padding: 20px; 
 } 
 
+
+/* desktop paragraphs heading styles */ 
 p {
    font-family:'Times New Roman', Times, serif; 
-   font-size: 1rem;  
-   color:aqua; 
+   font-size: large;
+   color:#000000;  
+   margin: 0 0 1rem 0;
+}  
+
+
+/* Headings */ 
+h1 { 
+   color: #000000; 
+   font-weight: 700; 
+   font-size: 1.5rem;
+   margin-top: 0; 
+   font-family:Georgia, 'Times New Roman', Times, serif;
 } 
+
+ 
+h2 {
+    color:black; 
+    font-size: 1.25rem;
+    font-weight: 700; 
+    margin-top: 0; 
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+
+
+/* List styles */ 
+ul {
+    list-style-type: disc;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    font-size: 0.9rem;
+}   
+
+
+/* --- Contact Section Styling --- */ 
+#contact { 
+    margin-top: 2rem; 
+    padding-top: 1.5rem; 
+    border-top: 2px solid #000000; 
+} 
+
+#contact h2 { 
+    color: #000000; 
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    font-size: 1.4rem; 
+    margin-bottom: 0.8rem; 
+} 
+
+#contact p { 
+    font-family:'Times New Roman', Times, serif;  
+    font-size: 1rem; 
+    color: #000000;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------*/ 
+/* --- Mobile Responsive Fixes --- */
+
+@media screen and (max-width: 768px) {
+   body {
+       padding: 10px; 
+
+    } 
+    
+    /* cv body mobile responsive fixes */ 
+.cv-page{
+    max-width : 100%; 
+    margin: 10px; 
+    padding: 15px; 
+    border-radius: 6px; 
+ }
+
+ /* Headings mobile responsive fixes */
+ h1 { 
+    font-size: 1.5rem; 
+} 
+
+
+h2 { 
+    font-size: 1.2rem; 
+} 
+
+h3 { 
+    font-size: 1rem; 
+}  
+
+/* Paragraphs and list mobile responsive fixes */
+p, ul { 
+    font-size: 0.9rem; 
+}
+
+}
